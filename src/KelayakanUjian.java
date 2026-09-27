@@ -12,3 +12,10 @@ public class KelayakanUjian {
 
         System.out.print("Dispensasi (true/false): ");
         boolean dispensasi = sc.nextBoolean();
+
+        boolean a = kehadiran >= 75 && nilaiTugas >= 60 || dispensasi;
+        boolean b = (kehadiran >= 75 && nilaiTugas >= 60) || dispensasi;
+        boolean c = kehadiran >= 75 && (nilaiTugas >= 60 || dispensasi);
+
+        boolean bukanDispensasi = !dispensasi;
+
